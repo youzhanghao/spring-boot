@@ -84,22 +84,22 @@ public class CommUtil {
 	public static int parseDate(String type, Date date) {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(date);
-		if (type.equals("y")) {
+		if ("y".equals(type)) {
 			return cal.get(Calendar.YEAR);
 		}
-		if (type.equals("M")) {
+		if ("M".equals(type)) {
 			return cal.get(Calendar.MONTH) + 1;
 		}
-		if (type.equals("d")) {
+		if ("d".equals(type)) {
 			return cal.get(Calendar.DAY_OF_MONTH);
 		}
-		if (type.equals("H")) {
+		if ("H".equals(type)) {
 			return cal.get(Calendar.HOUR_OF_DAY);
 		}
-		if (type.equals("m")) {
+		if ("m".equals(type)) {
 			return cal.get(Calendar.MINUTE);
 		}
-		if (type.equals("s")) {
+		if ("s".equals(type)) {
 			return cal.get(Calendar.SECOND);
 		}
 		return 0;
@@ -137,7 +137,7 @@ public class CommUtil {
 		if (v == null) {
 			return null;
 		}
-		if (v.equals("")) {
+		if ("".equals(v)) {
 			return "";
 		}
 		SimpleDateFormat df = new SimpleDateFormat(format);
@@ -152,7 +152,7 @@ public class CommUtil {
 	 * @return the string
 	 */
 	public static String formatLongDate(Object v) {
-		if (v == null || v.equals("")) {
+		if (v == null || "".equals(v)) {
 			return "";
 		}
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

@@ -53,7 +53,7 @@ public class ResultVo extends HashMap<String, Object> {
     }
     
     public boolean isSuccess(){
-    	return this.get("code") != null && this.get("code").toString().equals("200") ;
+    	return this.get("code") != null && "200".equals(this.get("code").toString());
     }
 
     /* edit by youzhanghao for dto params*/

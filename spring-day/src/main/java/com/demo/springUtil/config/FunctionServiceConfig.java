@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 /**
- * 包扫描指定 自动扫描该包下所有的@Service @Component @Controller @Repository
+ * 包扫描指定 自动扫描该包下所有的@Service @Component @com.demo.log.Controller @Repository
  */
 @ComponentScan("com.demo.springUtil")
 public class FunctionServiceConfig {

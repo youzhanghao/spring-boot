@@ -1,0 +1,6 @@
+server:
+  port: 8081
+app:
+  customFields: '{"appname":"test_log_local"}' # 指定els索引 需小写
+  logstashUrl: 10.19.248.200:31507
+  record: true
