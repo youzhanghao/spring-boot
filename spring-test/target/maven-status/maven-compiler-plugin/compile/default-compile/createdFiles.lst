@@ -1,0 +1,5 @@
+com/demo/springtest/dto/RedisHsetRequestDto.class
+com/demo/springtest/redis/RedisCacheConfig.class
+com/demo/springtest/redis/RedisSelfProperties.class
+com/demo/springtest/Application.class
+com/demo/springtest/controller/ReidsController.class
