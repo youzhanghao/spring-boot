@@ -35,8 +35,8 @@ server:
 redis:
 #  clusterHost: 10.19.132.217,10.19.132.217,10.19.132.217
 #  clusterPort: 7000,7001,7002
-  redisHost: 127.0.0.1
-  redisPort: 6379
+  redisHost: ${REDIS_HOST:127.0.0.1}
+  redisPort: ${REDIS_PORT:6379}
   redisPassword:
   expireTime: 3600
   minIdle: 0

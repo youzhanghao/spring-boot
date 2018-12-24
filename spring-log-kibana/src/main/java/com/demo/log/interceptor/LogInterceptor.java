@@ -1,6 +1,7 @@
 package com.demo.log.interceptor;
 
 import com.demo.log.config.AutoConfig;
+import com.demo.log.tools.Utils;
 import org.joda.time.DateTimeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -64,7 +65,7 @@ public class LogInterceptor extends HandlerInterceptorAdapter{
             long beginTime = startTimeThreadLocal.get();
             long endTime = System.currentTimeMillis();
             String uri = request.getRequestURI();
-
+//            String ip =
             logger.info("计时结束：{}  耗时：{}ms  URI: {}  最大内存: {}m  已分配内存: {}m  已分配内存中的剩余空间: {}m  最大可用内存: {}m",
                     new SimpleDateFormat("hh:mm:ss.SSS").format(endTime), endTime - beginTime,
                     request.getRequestURI(), Runtime.getRuntime().maxMemory()/1024/1024, Runtime.getRuntime().totalMemory()/1024/1024, Runtime.getRuntime().freeMemory()/1024/1024,
